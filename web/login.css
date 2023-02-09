@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 1, 2021, 9:03:15 PM
+    Author     : USER
+*/
+
+body{
+	font-family: "Raleway", sans-serif;
+	background: #dcefe9;
+}
+ 
+h1{
+	text-align: center;
+	
+	font-weight: 300;
+}
+
+.login_here{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.register_here{
+	text-align: center;
+	text-transform: uppercase;
+}
+ 
+ 
+.box_login{
+	width: 350px;
+	background: white;
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+
+.box_register{
+	width: 350px;
+	background: white;
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+
+
+
+label{
+	font-size: 11pt;
+}
+ 
+.login_form{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+ 
+.button_login{
+	background: #ce555a;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+ 
+.link{
+	background: #46de4b;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+

@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 6, 2021, 4:36:02 PM
+    Author     : USER
+*/
+
+body {
+  font-family: "Raleway", sans-serif;
+  background:#efefef;
+   border: 15px solid green;
+}
+form {
+  padding:30px 20px;
+  border-radius:3px;
+  margin:80px auto;
+  width:650px;
+  background:#dcefe9;
+  border-top:6px solid #62c2f3;
+}
+
+.radioP {
+  display: block;
+  position: relative;
+  margin: 20px 0;
+  padding-left:40px;
+  
+  font-family:arial;
+}
+.radioP:first-child {
+ margin:0 0 20px 0; 
+}
+
+input[type="radio"] {
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 0;
+}
+
+
+input[type="radio"] + label span.radioButtonGraph {
+  appearance: none;
+
+  z-index: 20;
+  position: absolute;
+  top:-3px;
+  left:0;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset hsla(0,0%,0%,.5) 0 0 0 1px;
+
+  background: #efefef;
+  background-image: radial-gradient(ellipse at center,  #62c2f3 0%,#62c2f3 40%,#efefef 45%);
+  background-repeat: no-repeat;
+
+  transition: background-position .15s cubic-bezier(.8, 0, 1, 1);
+}
+input[type="radio"]:checked + label span.radioButtonGraph {
+  transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1);
+}
+
+input[type="radio"] + label span.radioButtonGraph {
+  background-position: -24px 0;
+}
+input[type="radio"]:checked + label span.radioButtonGraph {
+  background-position: 0 0;
+}
+
+.button_submit{
+	background: #50DEC1;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+
+.button_back{
+	background:#ce555a;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}

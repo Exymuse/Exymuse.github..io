@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+      
+        
+        <div class="box_register">
+            <p class="register_here">Register Here</p>
+            
+        <form action="Servletregis" method="get">
+            Username  <input type="text" name="userName" class="login_form" placeholder="Username..." required><br><br>
+            Password   <input type="password" name="userPass" class="login_form" placeholder="Password..." required><br><br>
+            Email ID<input type="email" name="userEmail" class="login_form" placeholder="Email..."  required><br><br>
+            Date Of Birth<input type="date" name="userDOB" class="login_form"  required><br><br>
+            I have read and agree to the Terms and Conditions and Privacy Policy: <input type="checkbox" id="myCheck" name="check" required><br><br>
+           <input type="submit" onclick="clicked()" class="button_login"  value="Registration">
+         
+            <br/>
+	   <br/>
+           
+        </form>
+            <center>
+        <a href="index.html"> <input type="submit" formaction="login.html" class="link" value="Back to login"></a>
+            </center>
+        </div>
+         
+        <script type="text/javascript">
+    function clicked() {
+       if (confirm('Do you want to submit?')) {
+           yourformelement.submit();
+          
+       } else {
+           location.href="register.html";
+       }
+    }
+
+</script>
+       
+    </body>
+</html>

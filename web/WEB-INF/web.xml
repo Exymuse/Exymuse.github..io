@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet type="text/css" href="quizzz.css"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Servletlogin</servlet-name>
+        <servlet-class>Servletlogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servletregis</servlet-name>
+        <servlet-class>Servletregis</servlet-class>
+    </servlet>
+    
+    <servlet>
+  <servlet-name>ServletQuiz</servlet-name>
+        <servlet-class>ServletQuiz</servlet-class> 
+    </servlet>
+    
+      
+    <servlet>
+        <servlet-name>ServletContact</servlet-name>
+        <servlet-class>ServletContact</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servletlogin</servlet-name>
+        <url-pattern>/Servletlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servletregis</servlet-name>
+        <url-pattern>/Servletregis</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletQuiz</servlet-name>
+        <url-pattern>/ServletQuiz</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletContact</servlet-name>
+        <url-pattern>/ServletContact</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
